@@ -39,7 +39,7 @@ a {
 
 /* Navbar Section CSS Start */
 
-.navbar {
+nav {
   background: #ffffff;
   padding: 25px 0;
   position: fixed;
@@ -48,14 +48,23 @@ a {
   z-index: 999;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+.bars {
+  display: none;
 }
 
-.nav-link {
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
   font-size: 16px;
   color: #000000;
-  padding: 11px 35px !important;
+  padding: 0px 20px !important;
 }
 
 .sign-in-btn {
@@ -67,6 +76,7 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  padding: 11px 35px !important;
   margin-left: 10px;
 }
 
@@ -111,8 +121,15 @@ a {
   margin-bottom: 30px;
 }
 
+.hero-card img {
+  background: #f2f5ff;
+  max-width: 100px;
+  padding: 25px;
+  border-radius: 7px;
+}
+
 .hero-card h4 {
-  padding-top: 25px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -120,12 +137,6 @@ a {
   font-size: 20px;
   font-weight: 700;
   color: #000000;
-}
-
-.hero-card .active {
-  border: 1px solid #000000;
-  border-radius: 7px;
-  padding: 10px 50px;
 }
 
 /* Hero Section CSS End */

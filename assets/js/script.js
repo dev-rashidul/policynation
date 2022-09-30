@@ -1,3 +1,19 @@
+// Mobile Navbar
+const nav = document.querySelector(".bars");
+const menu = document.querySelector(".menu")
+
+nav.addEventListener("click", function(){
+	console.log("hi");
+	menu.classList.toggle("open")
+
+	if(menu.classList.contains("open")){
+		menu.style.maxHeight = menu.scrollHeight + "px";
+	}
+	else{
+		menu.removeAttribute("style")
+	}
+})
+
 // Testimonial Slider
 
 // Main Slider

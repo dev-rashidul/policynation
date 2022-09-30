@@ -13,10 +13,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .nav-link {
-    padding: 0;
-  }
-
   .hero-cards {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -43,9 +39,38 @@
 }
 
 @media (min-width: 350px) and (max-width: 767px) {
-  .nav-link {
-    padding-left: 0 !important;
-    padding-top: 25px;
+  .logo {
+    padding-left: 30px;
+  }
+
+  .logo img {
+    max-width: 80%;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ffffff;
+    width: 100%;
+    max-height: 0px;
+    left: 0;
+    top: 75px;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+  }
+
+  .menu.open {
+    visibility: visible;
+    transition: 0.1s ease-in-out !important;
+  }
+
+  .menu li {
+    padding-bottom: 20px;
   }
 
   .sign-in-btn {
@@ -56,12 +81,12 @@
     margin-top: 10px;
   }
 
-  .logo img {
-    max-width: 80%;
+  .hero-cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .hero-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-card h4 a {
+    font-size: 16px;
   }
 
   .health-card {
