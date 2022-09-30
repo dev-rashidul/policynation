@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Policynation</title>
 
+    <!-- Swiper CSS CDN for Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css"
+    />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
@@ -57,10 +63,18 @@
       <!-- Hero Section HTML Start -->
 
       <div id="Hero">
-        <div class="hero-wrapper">
+        <div class="hero-wrapper overflow-hidden">
           <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="hero-card col-md-6 col-lg-3">
+            <div class="hero-cards">
+              <div class="hero-card">
+                <a class="active" href="#"
+                  ><img
+                    src="assets/images/benefits-plans.svg"
+                    alt="benefits-plans"
+                /></a>
+                <h4><a href="#">Group Benefits Plans</a></h4>
+              </div>
+              <div class="hero-card">
                 <a href="#"
                   ><img
                     src="assets/images/car-insurance.svg"
@@ -68,64 +82,45 @@
                 /></a>
                 <h4><a href="#">Car Insurance</a></h4>
               </div>
-              <div class="col-md-6 col-lg-3 mt-4 mt-md-0">
-                <div class="hero-card">
-                  <a href="#"
-                    ><img
-                      src="assets/images/bike-insurance.svg"
-                      alt="bike-insurance"
-                  /></a>
-                  <h4><a href="#">Bike Insurance</a></h4>
-                </div>
+
+              <div class="hero-card">
+                <a href="#"
+                  ><img
+                    src="assets/images/bike-insurance.svg"
+                    alt="bike-insurance"
+                /></a>
+                <h4><a href="#">Bike Insurance</a></h4>
               </div>
-              <div class="col-md-6 col-lg-3 mt-4 mt-md-0">
-                <div class="hero-card">
-                  <a href="#"
-                    ><img
-                      src="assets/images/life-insurance.svg"
-                      alt="life-insurance"
-                  /></a>
-                  <h4><a href="#">Life Insurance</a></h4>
-                </div>
+              <div class="hero-card">
+                <a href="#"
+                  ><img
+                    src="assets/images/life-insurance.svg"
+                    alt="life-insurance"
+                /></a>
+                <h4><a href="#">Life Insurance</a></h4>
               </div>
-              <div class="col-md-6 col-lg-3 mt-4 mt-md-0">
-                <div class="hero-card">
-                  <a href="#"
-                    ><img
-                      src="assets/images/health-insurance.svg"
-                      alt="health-insurance"
-                  /></a>
-                  <h4><a href="#">Health Insurance</a></h4>
-                </div>
+              <div class="hero-card">
+                <a href="#"
+                  ><img
+                    src="assets/images/health-insurance.svg"
+                    alt="health-insurance"
+                /></a>
+                <h4><a href="#">Health Insurance</a></h4>
               </div>
-              <div class="col-md-6 col-lg-3 mt-4 mt-lg-5">
-                <div class="hero-card">
-                  <a href="#"
-                    ><img src="assets/images/super-topup.svg" alt="super-topup"
-                  /></a>
-                  <h4><a href="#">Super Topup</a></h4>
-                </div>
+              <div class="hero-card">
+                <a href="#"
+                  ><img src="assets/images/super-topup.svg" alt="super-topup"
+                /></a>
+                <h4><a href="#">Super Topup</a></h4>
               </div>
-              <div class="col-md-6 col-lg-3 mt-4 mt-lg-5">
-                <div class="hero-card">
-                  <a class="active" href="#"
-                    ><img
-                      src="assets/images/benefits-plans.svg"
-                      alt="benefits-plans"
-                  /></a>
-                  <h4><a href="#">Group Benefits Plans</a></h4>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mt-4 mt-lg-5">
-                <div class="hero-card">
-                  <a href="#">
-                    <img
-                      src="assets/images/wellness-plans.svg"
-                      alt="wellness-plans"
-                    />
-                  </a>
-                  <h4><a href="#">Wellness Plans</a></h4>
-                </div>
+              <div class="hero-card">
+                <a href="#">
+                  <img
+                    src="assets/images/wellness-plans.svg"
+                    alt="wellness-plans"
+                  />
+                </a>
+                <h4><a href="#">Wellness Plans</a></h4>
               </div>
             </div>
           </div>
@@ -255,9 +250,596 @@
       </section>
 
       <!-- Health Section HTML End -->
+
+      <!-- Work Section HTML Start -->
+
+      <section id="Work">
+        <div class="work-wrapper overflow-hidden">
+          <div class="container">
+            <div class="row flex-column-reverse flex-md-row">
+              <div class="col-md-6">
+                <div class="work-content">
+                  <h2>How does it work</h2>
+                  <div class="button">
+                    <a href="#"
+                      >Get My Quote
+                      <img
+                        src="assets/images/arrow-right.svg"
+                        alt="arrow-right"
+                      />
+                    </a>
+                  </div>
+                  <img
+                    class="img-fluid"
+                    src="assets/images/work.png"
+                    alt="work"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="timeline-wrapper">
+                  <div class="work-timeline">
+                    <div class="timeline-item">
+                      <h4>Give your basic details</h4>
+                    </div>
+                    <div class="timeline-item">
+                      <h4>
+                        Get instant group health insurance quotes directly from
+                        insurers
+                      </h4>
+                    </div>
+                    <div class="timeline-item">
+                      <h4>
+                        Choose from our recommended plans or customized your
+                        plan
+                      </h4>
+                    </div>
+                    <div class="timeline-item">
+                      <h4>Select plan and buy</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section HTML End -->
+
+      <!-- Admin Access Section HTML Start -->
+
+      <section id="Admin">
+        <div class="admin-wrapper overflow-hidden">
+          <div class="container">
+            <div class="row align-items-end">
+              <div class="col-lg-6">
+                <div class="admin-content">
+                  <h5>Admin Access</h5>
+                  <h2>For employers</h2>
+                  <div class="admin-details">
+                    <img
+                      src="assets/images/user-avatar.svg"
+                      alt="user-avatar"
+                    />
+                    <p>Add and delete employees</p>
+                  </div>
+                  <div class="admin-details">
+                    <img src="assets/images/employee.svg" alt="employee" />
+                    <p>View employee wise details</p>
+                  </div>
+                  <div class="admin-details">
+                    <img src="assets/images/incentive.svg" alt="incentive" />
+                    <p>
+                      Add additional benefits like doctor <br />
+                      e-consultation and health check-up
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="admin-img">
+                  <img
+                    src="assets/images/admin-access.png"
+                    alt="admin-access"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="row align-items-end flex-column-reverse flex-lg-row mt-5 pt-5"
+            >
+              <div class="col-lg-6">
+                <div class="admin-img">
+                  <img
+                    src="assets/images/for-employee.svg"
+                    alt="for-employee"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="admin-content">
+                  <h5>Download policynation app and sign in</h5>
+                  <h2>For employees</h2>
+                  <div class="admin-details-wrapper">
+                    <div>
+                      <div class="admin-details">
+                        <img
+                          src="assets/images/policy-feature.svg"
+                          alt="policy-feature"
+                        />
+                        <p>Policy feature detailing</p>
+                      </div>
+                      <div class="admin-details">
+                        <img
+                          src="assets/images/digital-health.svg"
+                          alt="digital-health"
+                        />
+                        <p>Digital health ID</p>
+                      </div>
+                      <div class="admin-details">
+                        <img
+                          src="assets/images/cashless-hospital.svg"
+                          alt="cashless-hospital"
+                        />
+                        <p>List of cashless hospitals</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="admin-details">
+                        <img
+                          src="assets/images/submission-claim.svg"
+                          alt="submission-claim"
+                        />
+                        <p>Submission of claims documents</p>
+                      </div>
+                      <div class="admin-details">
+                        <img
+                          src="assets/images/chat-support.svg"
+                          alt="chat-support"
+                        />
+                        <p>Whatsapp / Chat support in claims</p>
+                      </div>
+                      <div class="admin-details">
+                        <img
+                          src="assets/images/claims-status.svg"
+                          alt="claims-status"
+                        />
+                        <p>Claims status</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Admin Access Section HTML End -->
+
+      <!-- Testimonial Section HTML Start -->
+
+      <section id="Testimonial">
+        <div class="testimonial-wrapper overflow-hidden">
+          <div class="container">
+            <div class="testimonial-slider">
+              <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="slider-content d-flex align-items-start">
+                        <img src="assets/images/quote.svg" alt="quote" />
+                        <p>
+                          We had an incredible experience working with Landify
+                          and were impressed they made such a big difference in
+                          only three weeks. Our team is so grateful for the
+                          wonderful improvements they made and their ability to
+                          get familiar with the product concept so quickly. It
+                          acted as a catalyst to take our design to the next
+                          level and get more eyes on our product. Our team is so
+                          grateful for the wonderful improvements they made and
+                          their ability to get familiar with the product concept
+                          so quickly. It acted as a catalyst to take our design
+                          to the next level and get more eyes on our product.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="slider-content d-flex align-items-start">
+                        <img src="assets/images/quote.svg" alt="quote" />
+                        <p>
+                          We had an incredible experience working with Landify
+                          and were impressed they made such a big difference in
+                          only three weeks. Our team is so grateful for the
+                          wonderful improvements they made and their ability to
+                          get familiar with the product concept so quickly. It
+                          acted as a catalyst to take our design to the next
+                          level and get more eyes on our product. Our team is so
+                          grateful for the wonderful improvements they made and
+                          their ability to get familiar with the product concept
+                          so quickly. It acted as a catalyst to take our design
+                          to the next level and get more eyes on our product.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="slider-content d-flex align-items-start">
+                        <img src="assets/images/quote.svg" alt="quote" />
+                        <p>
+                          We had an incredible experience working with Landify
+                          and were impressed they made such a big difference in
+                          only three weeks. Our team is so grateful for the
+                          wonderful improvements they made and their ability to
+                          get familiar with the product concept so quickly. It
+                          acted as a catalyst to take our design to the next
+                          level and get more eyes on our product. Our team is so
+                          grateful for the wonderful improvements they made and
+                          their ability to get familiar with the product concept
+                          so quickly. It acted as a catalyst to take our design
+                          to the next level and get more eyes on our product.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="slider-content d-flex align-items-start">
+                        <img src="assets/images/quote.svg" alt="quote" />
+                        <p>
+                          We had an incredible experience working with Landify
+                          and were impressed they made such a big difference in
+                          only three weeks. Our team is so grateful for the
+                          wonderful improvements they made and their ability to
+                          get familiar with the product concept so quickly. It
+                          acted as a catalyst to take our design to the next
+                          level and get more eyes on our product. Our team is so
+                          grateful for the wonderful improvements they made and
+                          their ability to get familiar with the product concept
+                          so quickly. It acted as a catalyst to take our design
+                          to the next level and get more eyes on our product.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="slider-content d-flex align-items-start">
+                        <img src="assets/images/quote.svg" alt="quote" />
+                        <p>
+                          We had an incredible experience working with Landify
+                          and were impressed they made such a big difference in
+                          only three weeks. Our team is so grateful for the
+                          wonderful improvements they made and their ability to
+                          get familiar with the product concept so quickly. It
+                          acted as a catalyst to take our design to the next
+                          level and get more eyes on our product. Our team is so
+                          grateful for the wonderful improvements they made and
+                          their ability to get familiar with the product concept
+                          so quickly. It acted as a catalyst to take our design
+                          to the next level and get more eyes on our product.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="slider-content d-flex align-items-start">
+                        <img src="assets/images/quote.svg" alt="quote" />
+                        <p>
+                          We had an incredible experience working with Landify
+                          and were impressed they made such a big difference in
+                          only three weeks. Our team is so grateful for the
+                          wonderful improvements they made and their ability to
+                          get familiar with the product concept so quickly. It
+                          acted as a catalyst to take our design to the next
+                          level and get more eyes on our product. Our team is so
+                          grateful for the wonderful improvements they made and
+                          their ability to get familiar with the product concept
+                          so quickly. It acted as a catalyst to take our design
+                          to the next level and get more eyes on our product.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="client d-flex align-items-center">
+                        <div>
+                          <img
+                            src="assets/images/client-1.svg"
+                            alt="client-1"
+                          />
+                        </div>
+                        <div class="client-info">
+                          <h4>Jane Coper</h4>
+                          <h6>CEO, ABC Corporation</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="client d-flex align-items-center">
+                        <div>
+                          <img
+                            src="assets/images/client-2.svg"
+                            alt="client-2"
+                          />
+                        </div>
+                        <div class="client-info">
+                          <h4>Jane Coper2</h4>
+                          <h6>CEO, ABC Corporation</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="client d-flex align-items-center">
+                        <div>
+                          <img
+                            src="assets/images/client-3.svg"
+                            alt="client-3"
+                          />
+                        </div>
+                        <div class="client-info">
+                          <h4>Jane Coper3</h4>
+                          <h6>CEO, ABC Corporation</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="client d-flex align-items-center">
+                        <div>
+                          <img
+                            src="assets/images/client-4.svg"
+                            alt="client-4"
+                          />
+                        </div>
+                        <div class="client-info">
+                          <h4>Jane Coper4</h4>
+                          <h6>CEO, ABC Corporation</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                      <div class="client d-flex align-items-center">
+                        <div>
+                          <img
+                            src="assets/images/client-5.svg"
+                            alt="client-5"
+                          />
+                        </div>
+                        <div class="client-info">
+                          <h4>Jane Coper5</h4>
+                          <h6>CEO, ABC Corporation</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section HTML End -->
+
+      <!-- Company Section HTML Start -->
+
+      <section id="Company">
+        <div class="company-wrapper overflow-hidden">
+          <div class="container">
+            <div class="row">
+              <div class="swiper company-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/images/company-1.svg" alt="company-1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/company-2.svg" alt="company-2" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/company-3.svg" alt="company-3" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/company-4.svg" alt="company-4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/company-5.svg" alt="company-5" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/company-1.svg" alt="company-1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/company-2.svg" alt="company-2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Company Section HTML End -->
     </main>
 
     <!-- Main Part HTML End -->
+
+    <!-- Footer Section HTML Start -->
+
+    <footer>
+      <section id="Footer">
+        <div class="footer-wrapper overflow-hidden">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <div class="footer-menu">
+                  <h5>Group Health Insurance</h5>
+                  <div class="footer-links">
+                    <ul>
+                      <li><a href="#">What is Group Health Insurance</a></li>
+                      <li><a href="#">Why buy a group health Insurance</a></li>
+                      <li>
+                        <a href="#">Benefits of Group Health Insurance</a>
+                      </li>
+                      <li>
+                        <a href="#">Features of Group Health Insurance</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >What is not Covered in Group Health Insurance</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Who should buy a Group Health Insurance plan</a
+                        >
+                      </li>
+                      <li><a href="#">Wellness Plans</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="footer-menu mt-5 mt-lg-0">
+                  <h5>Individual Health Insurance</h5>
+                  <div class="footer-links">
+                    <ul>
+                      <li><a href="#">What Is Health Insurance</a></li>
+                      <li><a href="#">Why Health Insurance</a></li>
+                      <li>
+                        <a href="#">Different types of Health insurance</a>
+                      </li>
+                      <li><a href="#">Individual SI Vs. Family SI</a></li>
+                      <li><a href="#">What does a health policy cover</a></li>
+                      <li>
+                        <a href="#">What is not covered in a health policy</a>
+                      </li>
+                      <li><a href="#">How much Sum Insured is good</a></li>
+                      <li><a href="#">How much Sum Insured is good</a></li>
+                      <li><a href="#">FAQs on Health Insurance</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="footer-menu mt-5 mt-lg-0">
+                  <h5>Car Insurance</h5>
+                  <div class="footer-links">
+                    <ul>
+                      <li><a href="#">What is car insurance</a></li>
+                      <li><a href="#">Different types of car insurance</a></li>
+                      <li><a href="#">What is covered in car insurance</a></li>
+                      <li>
+                        <a href="#">What is not covered in car insurance</a>
+                      </li>
+                      <li><a href="#">Add-on benefits</a></li>
+                      <li>
+                        <a href="#">What is insured declared value (IDV)</a>
+                      </li>
+                      <li><a href="#">What is No Claim Bonus (NCB)</a></li>
+                      <li><a href="#">FAQs on Car Insurance</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="footer-menu mt-5 mt-lg-0">
+                  <h5>Bike Insurance</h5>
+                  <div class="footer-links">
+                    <ul>
+                      <li><a href="#">What is bike insurance</a></li>
+                      <li><a href="#">Different types of bike insurance</a></li>
+                      <li><a href="#">What is covered in bike insurance</a></li>
+                      <li>
+                        <a href="#">What is not covered in bike insurance</a>
+                      </li>
+                      <li><a href="#">Add-on benefits</a></li>
+                      <li>
+                        <a href="#">What is insured declared value (IDV</a>
+                      </li>
+                      <li><a href="#">What is No Claim Bonus (NCB)</a></li>
+                      <li><a href="#">FAQs on bike Insurance</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-menu mt-5">
+                  <h5>Term Life Insurance</h5>
+                  <div class="footer-links">
+                    <ul>
+                      <li><a href="#">What life insurance</a></li>
+                      <li>
+                        <a href="#"
+                          >Different types of life insurance policies</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">What is not covered in life insurance</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div>
+                <p>Payment option</p>
+                <img src="assets/images/payment.svg" alt="payment" />
+              </div>
+              <div>
+                <p>Member of</p>
+                <img src="assets/images/member-of.svg" alt="member-of" />
+              </div>
+              <div>
+                <p>Licensed by</p>
+                <img src="assets/images/licensed.svg" alt="licensed" />
+              </div>
+            </div>
+            <hr />
+            <div class="footer-nav">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Site map</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </div>
+            <div class="footer-copyright">
+              <p>
+                This site is being operated by Ensureti Insurance Broking
+                Services Pvt. Ltd., an IRDAI certified broker under License
+                No.493 IRDA/DB577/14, valid till: 09/07/2023 <br />
+                Principal Officer: Srikanth L (Contact: 044-43546219) Insurance
+                is the subject matter of solicitation.
+              </p>
+              <span>Copyright © 2021. Policy Nation All Rights Reserved</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Footer Section HTML End -->
+
+    <!-- Swiper JavaScript CDN for Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- Bootstrap JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>

@@ -1,30 +1,147 @@
 /* Responsive CSS */
 
-@media (min-width: 1192px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
   .insurance-wrapper {
     padding-bottom: 80px;
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .work-content img {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
+  .nav-link {
+    padding: 0;
+  }
+
+  .hero-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .sign-in-btn {
+    padding: 11px;
+  }
+
   .insurance-wrapper {
     padding-bottom: 50px;
   }
   .health-card {
     margin-bottom: 30px;
   }
+  .work-content img {
+    max-width: 100%;
+  }
+  .timeline-wrapper {
+    padding: 50px 40px;
+  }
+  .timeline-item {
+    padding-bottom: 50px;
+  }
 }
 
 @media (min-width: 350px) and (max-width: 767px) {
+  .nav-link {
+    padding-left: 0 !important;
+    padding-top: 25px;
+  }
+
+  .sign-in-btn {
+    padding: 11px !important;
+    max-width: 150px;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
   .logo img {
     max-width: 80%;
   }
+
+  .hero-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .health-card {
     margin-bottom: 40px;
   }
   .insurance-content {
     text-align: center;
     margin-bottom: 70px;
+  }
+  .work-content {
+    margin-top: 50px;
+  }
+  .work-content img {
+    max-width: 100%;
+  }
+  .timeline-wrapper {
+    padding: 50px 40px;
+  }
+  .timeline-item {
+    padding-bottom: 70px;
+  }
+  .admin-details-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .admin-img {
+    margin-top: 50px;
+  }
+
+  .gallery-thumbs .swiper-slide-active {
+    margin-left: -60px;
+    margin-right: 50px !important;
+  }
+
+  .swiper-pagination {
+    display: block;
+    width: 96%;
+    margin: 20px auto 0;
+    overflow: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    background: #106caa !important;
+    margin: 5px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #bad4d9;
+  }
+
+  .slider-content {
+    padding: 40px 20px;
+  }
+
+  .footer-menu {
+    padding-left: 30px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .footer-bottom div {
+    padding-top: 20px;
+  }
+  .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30%;
+  }
+  .footer-nav li {
+    padding-bottom: 15px;
+    text-align: left;
+  }
+  .footer-nav li::after {
+    transform: rotate(90deg);
+    left: 30px;
+    top: 10px;
   }
 }
 

@@ -41,7 +41,11 @@ a {
 
 .navbar {
   background: #ffffff;
-  padding-top: 25px;
+  padding: 25px 0;
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar-toggler:focus {
@@ -90,6 +94,15 @@ a {
   padding-bottom: 30px;
 }
 
+.hero-wrapper {
+  margin-top: 80px;
+}
+
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 .hero-card {
   display: flex;
   flex-direction: column;
@@ -100,6 +113,7 @@ a {
 
 .hero-card h4 {
   padding-top: 25px;
+  text-align: center;
 }
 
 .hero-card h4 a {
@@ -109,9 +123,9 @@ a {
 }
 
 .hero-card .active {
-  padding: 20px 100px;
   border: 1px solid #000000;
   border-radius: 7px;
+  padding: 10px 50px;
 }
 
 /* Hero Section CSS End */
@@ -232,4 +246,318 @@ a {
 
 /* Insurance Section CSS End */
 
+/* Work Section CSS Start */
+
+.work-wrapper {
+  padding-top: 150px;
+}
+
+.work-content h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.work-content .button {
+  margin-top: 45px;
+  margin-bottom: 75px;
+}
+
+.work-content img {
+  max-width: 75%;
+}
+
+.timeline-wrapper {
+  background: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 60px 70px;
+  border-radius: 7px;
+}
+
+.work-timeline {
+  position: relative;
+}
+
+.work-timeline::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  border: 1px dashed #48ae4d;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 90px;
+  padding-left: 40px;
+}
+
+.timeline-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0px;
+}
+
+.timeline-item::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #106caa;
+  border: 7px solid #b3cfe1;
+  border-radius: 100%;
+  top: -5px;
+  left: -19px;
+  z-index: 1;
+}
+
+.timeline-item::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: #f9f9f9;
+  border-radius: 100%;
+  left: -29px;
+  top: -20px;
+}
+
+/* Work Section CSS End */
+
+/* Admin Access Section CSS Start */
+
+.admin-wrapper {
+  background: #f3f8fb;
+  margin-top: 120px;
+  padding: 80px 0;
+}
+
+.admin-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #106caa;
+}
+
+.admin-content h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.admin-details-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.admin-details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.admin-details img {
+  background: #106caa;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.admin-details p {
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+/* Admin Access Section CSS End */
+
+/* Testimonial Section CSS Start */
+
+.gallery-top {
+  margin-bottom: 20px;
+}
+
+.gallery-thumbs {
+  margin-left: 60px;
+}
+
+.gallery-thumbs .swiper-slide-active {
+  max-width: 250px;
+  width: 100% !important;
+  margin-left: -30px;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.testimonial-wrapper {
+  background: rgba(72, 174, 77, 0.1);
+  padding: 80px 0;
+}
+
+.testimonial-slider {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slider-content {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+}
+
+.slider-content::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  left: 50%;
+  bottom: -12px;
+  border-radius: 7px;
+  transform: translate(-50%) rotate(45deg);
+  z-index: 1;
+}
+
+.slider-content p {
+  font-size: 16px;
+  color: #18191f;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.client-info {
+  padding-left: 15px;
+  display: none;
+}
+
+.gallery-thumbs .swiper-slide-active .client-info {
+  display: block;
+}
+
+.client-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 5px;
+  color: #18191f;
+}
+
+.client-info p {
+  font-size: 13px;
+  color: #18191f;
+}
+
+/* Testimonial Section CSS End */
+
+/* Company Section CSS Start */
+
+.company-wrapper {
+  padding: 20px;
+}
+
+.company-slider {
+  overflow: hidden;
+}
+
+.company-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Company Section CSS End */
+
 /* Main Part CSS End */
+
+/* Footer Section CSS Start */
+
+.footer-wrapper {
+  background: #0b0d17;
+  padding-top: 60px;
+}
+
+.footer-menu h5 {
+  font-size: 16px;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+
+.footer-links ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.footer-links ul li a {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  display: flex;
+  margin-top: -80px;
+  margin-bottom: 25px;
+}
+
+.footer-bottom div {
+  margin-right: 42px;
+}
+
+.footer-bottom div p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-wrapper hr {
+  background: #5a5a5a;
+  height: 2px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0;
+}
+
+.footer-nav li {
+  position: relative;
+  list-style: none;
+}
+
+.footer-nav li a {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 12px;
+}
+
+.footer-nav li::after {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  height: 100%;
+  width: 1px;
+  top: 0;
+}
+
+.footer-copyright p,
+.footer-copyright span {
+  font-size: 14px;
+  text-align: center;
+  color: #d9dbe1;
+  line-height: 28px;
+}
+
+.footer-copyright span {
+  display: block;
+  padding-bottom: 30px;
+}
+
+/* Footer Section CSS End */
