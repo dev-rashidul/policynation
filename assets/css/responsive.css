@@ -82,7 +82,7 @@
   }
 
   .hero-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero-card h4 a {
@@ -96,7 +96,7 @@
     text-align: center;
     margin-bottom: 70px;
   }
-  .work-content {
+  .timeline-wrapper {
     margin-top: 50px;
   }
   .work-content img {
