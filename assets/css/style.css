@@ -128,6 +128,10 @@ nav {
   border-radius: 7px;
 }
 
+.hero-card .active img {
+  background: #dadada;
+}
+
 .hero-card h4 {
   padding-top: 20px;
   text-align: center;
