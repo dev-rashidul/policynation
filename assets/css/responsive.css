@@ -90,6 +90,10 @@
     padding: 15px;
   }
 
+  .hero-card h4 {
+    padding-top: 10px;
+  }
+
   .hero-card h4 a {
     font-size: 11px;
   }
